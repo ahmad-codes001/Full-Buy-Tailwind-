@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Artifika&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body style="font-family: Artifika , serif;" class="bg-[#2a2b2f]">
+    <!-- Header -->
+    <nav class="flex justify-between m-[2%] top-0">
+        <div class="md:w-[15%] w-[40%]">
+            <img src="image/Logo.svg" alt="">
+        </div>
+        <div class="relative inline-block flex md:justify-around justify-around md:w-[20%] w-[56%]">
+            <div class="">
+                <button type="button"
+                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-[#2a2b2f] px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-[#2e3034] hover:bg-[#2e3034]"
+                    id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    <img src="image/United Kingdom (GB).svg" alt="">
+                    <svg class="-mr-1 h-5 w-5 text-gray-400" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+            <div class="">
+                <button type="button"
+                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-[#2a2b2f] px-3 py-2 text-sm text-white font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-[#2e3034] hover:bg-[#2e3034]"
+                    id="menu-button" aria-expanded="true" aria-haspopup="true">USD<svg
+                        class="-mr-1 h-5 w-5 text-gray-400" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <button type="button" class="bg-[#d4b038] rounded-md gap-x-1 text-white hover:bg-[#2e3034] p-[6px]">
+                    <i class="fa-brands fa-steam-symbol" style="color: #ffffff;"></i> LOGIN
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Below Header -->
+    <div class="w-full md:h-[600px] h-[1200px] relative bg-[#2a2b2f]">
+        <div class="flex md:flex-row flex-col justify-around text-white">
+            <div class="md:w-[40%] w-[80%] h-[400px] md:ml-[6%] ml-[10%]">
+                <h2 class="font-bold text-6xl mt-[20%]">Get<span class="text-[#d4b038]"> a fair price </span>for your
+                    skins</h2>
+                <div class="flex md:flex-row flex-col mt-[8%]">
+                    <div class="flex">
+                        <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+                        <p class="ml-[2%]">Up to 95% Buff instantly <span class="">with no fee.</span></p>
+                    </div>
+                    <div class="md:ml-[6%] flex">
+                        <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+                        <p class="ml-[2%]">Sign in with Steam now
+                            <span class="">and start selling.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex mt-[10%]">
+                    <div class="flex">
+                        <button type="button"
+                            class="bg-[#d4b038] rounded-md gap-x-1 text-white hover:bg-[#2e3034] p-[8px] ">
+                            <i class="fa-brands fa-steam-symbol" style="color: #ffffff;"></i> Login with Steam
+                        </button>
+                    </div>
+                    <div class="ml-[8%] mt-[1%]">
+                        <p class=""> Review us on <i class="fa-solid fa-star" style="color: #079f6d;"></i> Trust Pilot
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-[60%] w-[100%] md:mt-[0%] mt-[24%] h-[600px] flex relative">
+                <div class="absolute md:right-[9%] right-[8%] top-[4%] md:top-[8%]">
+                    <p
+                        class="border-2 border-[#505259] rounded-md gap-x-1 text-white hover:bg-[grey] md:p-[6px] p-[4px] md:text-[16px] text-xs">
+                        Ak-47 |
+                        Gold Arabesque</p>
+                    <div class="flex mt-[4%]">
+                        <p><i class="fa fa-info-circle" aria-hidden="true"></i> </p>
+                        <p class="ml-[4%] text-[gray] md:text-[16px] text-xs">Field-Tested </p>
+                    </div>
+
+                </div>
+                <div style="background-image: url(./image/bgimage.svg); background-size: cover;"
+                    class="md:w-[100%] md:h-[100%] w-[100%] h-[63%] relative">
+                    <div class="max-w-2xl mx-auto">
+                        <div id="default-carousel" class="relative md:mt-[18%] mt-[10%]" data-carousel="static">
+
+                            <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <span
+                                        class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl "></span>
+                                    <img src="image/AK47 (1).svg"
+                                        class="block absolute top-1/2 left-1/2 w-[70%] -translate-x-1/2 -translate-y-1/2"
+                                        alt="...">
+                                </div>
+
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="image/AK47(5).svg"
+                                        class="block absolute top-1/2 left-1/2 w-[70%] -translate-x-1/2 -translate-y-1/2"
+                                        alt="...">
+                                </div>
+
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="image/AK47(6).svg"
+                                        class="block absolute top-1/2 left-1/2 w-[70%] -translate-x-1/2 -translate-y-1/2"
+                                        alt="...">
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex absolute bottom-[-2%] left-[51%] z-30 space-x-3 bg-[gray] -translate-x-1/2">
+                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                                    aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                                    aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                                    aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                            </div>
+
+                            <button type="button"
+                                class="flex absolute top-[127px] left-[273px] z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                data-carousel-prev>
+                                <span
+                                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-[70%] sm:h-[8%] bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 19l-7-7 7-7"></path>
+                                    </svg>
+                                    <span class="hidden">Anterior</span>
+                                </span>
+                            </button>
+                            <button type="button"
+                                class="flex absolute top-[127px] right-[256px] z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                data-carousel-next>
+                                <span
+                                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-[70%] sm:h-[8%] bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <!-- <span class="hidden">Siguiente</span> -->
+                                </span>
+                            </button>
+                        </div>
+
+                        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="flex md:flex-row flex-col md:justify-between w-[90%] m-auto md:mt-[-12%] mt-[-50%] relative">
+            <div class="flex justify-around md:w-[33%] w-[100%] h-[80px] border-[#3f4044] rounded-md border-2">
+                <div class="mt-[3%]"><img src="image/Group.svg" alt=""></div>
+                <div class="mt-[3%]">
+                    <p class="text-white">GET PAID UP TO</p>
+                    <p class="text-[#d4b038] font-bold">15% more with
+                        FullBuy.gg</p>
+                </div>
+                <svg class="-mr-1 h-5 w-5 mt-[7%] text-gray-400" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                </svg>
+
+            </div>
+
+            <div
+                class="flex justify-around md:w-[33%] w-[100%] h-[80px] border-[#3f4044] md:mt-[0%] mt-[3%] rounded-md border-2">
+                <div class="mt-[3%]"><img src="image/fi_2945544.svg" alt=""></div>
+                <div class="mt-[3%]">
+                    <p class="text-white">First site with</p>
+                    <p class="text-[#d4b038] font-bold">No Fees</p>
+                </div>
+                <svg class="-mr-1 h-5 w-5 mt-[7%] text-gray-400" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                </svg>
+
+            </div>
+
+            <div
+                class="flex justify-around md:w-[33%] w-[100%] h-[80px] border-[#3f4044] md:mt-[0%] mt-[3%] rounded-md border-2">
+                <div class="mt-[3%]"><img src="image/Group2.svg" alt=""></div>
+                <div class="mt-[3%]">
+                    <p class="text-white">OUR SYSTEM ENABLES</p>
+                    <p class="text-[#d4b038] font-bold">Secure
+                        Transaction</p>
+                </div>
+                <svg class="-mr-1 h-5 w-5 mt-[7%] text-gray-400" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                </svg>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 3rd Container -->
+
+    <div class="md:h-[600px] h-[1100px] w-full bg-[#27282b] relative">
+        <div style="background-image: url(./image/Layer.svg); background-size: inherit; background-repeat: no-repeat;"
+            class="w-[100%] h-[100%] absolute top-[11%] left-[-5%]"></div>
+        <div class="ml-[5%] pt-[5%]">
+            <p class="text-[gray] text-sm">See recently sold items</p>
+            <p class="text-[#d4b038] font-bold text-3xl mt-[1%]">Recent <span class="text-white">Cashouts</span></p>
+        </div>
+        <!-- Box 1 -->
+        <div class="w-full">
+            <div class=" flex md:flex-row flex-col md:ml-[5%] mt-[4%]">
+                <div class="flex md:justify-between justify-around">
+                    <div class="w-[48%] h-[300px] bg-[#2e2f33] border-2 border-[#3f4044] rounded-md">
+                        <div
+                            class="w-[17%] ml-[5%] mt-[10%] bg-[#2a4a35] text-[#1ab83d] border-2 rounded-md border-[#2a4635] ">
+                            <p class="ml-[1%] text-sm">23%</p>
+                        </div>
+                        <div class="mt-[10%] ml-[5%]"><img src="image/AK47(5).svg" alt=""></div>
+                        <div class="text-white ml-[5%] mt-[5%]">
+                            <p class="text-sm">AK-47 | Bloodsport</p>
+                            <p class="text-[gray]">Field-Tested</p>
+                            <p class="text-[#d4b038] font-bold mt-[7%]">$507.29</p>
+                        </div>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="w-[48%] h-[300px] bg-[#2d2e32] border-2 border-[#3f4044] rounded-md">
+                        <div
+                            class="w-[17%] ml-[5%] mt-[10%] bg-[#583529] text-[#ff4c00] border-2 rounded-md border-[#823c1f] ">
+                            <p class="text-xs">-12%</p>
+                        </div>
+                        <div class="mt-[10%] ml-[5%]"><img src="image/Group 33919.svg" alt=""></div>
+                        <div class="text-white ml-[5%] mt-[5%]">
+                            <p class="text-sm">AK-47 | Elite Build</p>
+                            <p class="text-[gray]">Field-Tested</p>
+                            <p class="text-[#d4b038] font-bold mt-[7%]">$507.29</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BOx 3 -->
+                <div class="flex md:justify-between justify-around md:px-[1%] py-[1%]  md:py-0">
+                    <div class="w-[48%] h-[300px] bg-[#2d2e32] border-2 border-[#3f4044] rounded-md">
+                        <div
+                            class="w-[17%] ml-[5%] mt-[10%] bg-[#2a4a35] text-[#1ab83d] border-2 rounded-md border-[#2a4635] ">
+                            <p class="ml-[1%] text-sm">51%</p>
+                        </div>
+                        <div class="mt-[10%] ml-[5%]"><img src="image/Group 33921.svg" alt=""></div>
+                        <div class="text-white ml-[5%] mt-[5%]">
+                            <p class="text-sm">AK-47 | Slate</p>
+                            <p class="text-[gray]">Field-Tested</p>
+                            <p class="text-[#d4b038] font-bold mt-[7%]">$507.29</p>
+                        </div>
+                    </div>
+                    <!-- Box 4 -->
+                    <div class="w-[48%] h-[300px] bg-[#2d2e32] border-2 border-[#3f4044] rounded-md">
+                        <div
+                            class="w-[18%] ml-[5%] mt-[10%] bg-[#583529] text-[#ff4c00] border-2 rounded-md border-[#823c1f] ">
+                            <p class="text-xs">-67%</p>
+                        </div>
+                        <div class="mt-[10%] ml-[5%]"><img src="image/AK47 (2).svg" alt=""></div>
+                        <div class="text-white ml-[5%] mt-[5%]">
+                            <p class="text-sm">AK-47 | Elite Build</p>
+                            <p class="text-[gray]">Field-Tested</p>
+                            <p class="text-[#d4b038] font-bold mt-[7%]">$507.29</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box 5 -->
+                <div class="flex md:justify-between justify-around">
+                    <div class="w-[48%] h-[300px] bg-[#2d2e32] border-2 border-[#3f4044] rounded-md">
+                        <div
+                            class="w-[17%] ml-[5%] mt-[10%] bg-[#2a4a35] text-[#1ab83d] border-2 rounded-md border-[#2a4635] ">
+                            <p class="ml-[1%] text-sm">51%</p>
+                        </div>
+                        <div class="mt-[10%] ml-[5%]"><img src="image/Group 33922.svg" alt=""></div>
+                        <div class="text-white ml-[5%] mt-[5%]">
+                            <p class="text-sm">AK-47 | Bloodsport</p>
+                            <p class="text-[gray]">Field-Tested</p>
+                            <p class="text-[#d4b038] font-bold mt-[7%]">$507.29</p>
+                        </div>
+                    </div>
+                    <!-- Box 6 -->
+                    <div class="w-[48%] h-[300px] bg-[#2d2e32] border-2 border-[#3f4044] rounded-md">
+                        <div
+                            class="w-[17%] ml-[5%] mt-[10%] bg-[#2a4a35] text-[#1ab83d] border-2 rounded-md border-[#2a4635] ">
+                            <p class="ml-[1%] text-sm">51%</p>
+                        </div>
+                        <div class="mt-[10%] ml-[5%] "><img src="image/AK47 (4).svg" width="80%" alt=""></div>
+                        <div class="text-white ml-[5%] mt-[5%]">
+                            <p class="text-sm">AK-47 | Elite Build</p>
+                            <p class="text-[gray]">Field-Tested</p>
+                            <p class="text-[#d4b038] font-bold mt-[7%]">$507.29</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 4th Container -->
+    <div class="md:h-[900px] h-[600px] w-[100%] relative">
+        <div class="flex ">
+            <div class="mt-[10%] ml-[10%]">
+                <p class="text-[gray] text-sm">HOW TO USE FULLBUY.GG</p>
+                <p class="text-white font-bold text-2xl mt-[1%]">Simple <span class="text-[#d4b038]">4 steps </span>to
+                    start</p>
+            </div>
+            <div class="absolute md:right-[0%] md:top-[-8%] top-[12%]">
+                <img src="image/Group 33923.svg" width="90%" alt="">
+                <div style="background-image: url(./image/Layer.svg); background-repeat: no-repeat;"
+                    class="w-[70%] h-[100%] bg-[40%] absolute top-[-16%] left-[10%] "> </div>
+            </div>
+        </div>
+
+        <div
+            class="w-[80%] md:h-[400px] h-[200px] md:mt-[4%] mt-[35%] z-[1000] relative m-auto flex justify-around text-white md:font-bold md:text-[16px] text-xs backdrop-blur bg-[#2D2E32AC] border-[#3f4044] rounded-md">
+            <div class=" flex flex-col justify-evenly">
+                <div class="md:w-[100%] w-[70%]"><img src="image/Group 33925.svg" alt=""></div>
+                <p class="">Login with
+                    <span class="text-[#d4b038]">Steam</span>
+                </p>
+            </div>
+            <div class="flex flex-col justify-evenly">
+                <div class="md:w-[100%] w-[70%]"><img src="image/Group 33926.svg" alt=""></div>
+                <p> <span class="text-[#d4b038]">Select</span> items to cashout</p>
+            </div>
+            <div class="flex flex-col justify-evenly">
+                <div class="md:w-[100%] w-[70%]"><img src="image/Group 33927.svg" alt=""></div>
+                <p> Cashout and accept <span class="text-[#d4b038]">trade</span></p>
+            </div>
+            <div class="flex flex-col md:justify-evenly justify-evenly">
+                <div class="md:w-[100%] w-[70%]"><img src="image/Group 33928.svg" alt=""></div>
+                <p><span class="text-[#d4b038]">Get paid</span>
+                    securely </p>
+            </div>
+        </div>
+        <div class="flex justify-center mt-[7%]">
+            <button type="button" class="bg-[#d4b038] rounded-md gap-x-1 text-white hover:bg-[#2e3034] p-[8px] ">
+                <i class="fa-brands fa-steam-symbol" style="color: #ffffff;"></i> Login with Steam And Start
+            </button>
+        </div>
+    </div>
+
+    <!-- 5th Container -->
+
+    <div
+        class="md:h-[800px] h-[1200px] w-[100%] flex md:flex-row flex-col md:justify-around justify-evenly bg-[#27282b] relative">
+        <div class="text-[gray] md:w-[40%] w-[90%] md:m-0 m-auto">
+            <p class="mt-[20%]">why fullBuy.gg</p>
+            <h1 class="text-4xl font-bold mt-[3%] text-white"><span class="text-[#d4b038]">Our services</span> is best
+                on the market</h1>
+            <p class="text-sm mt-[3%]">Ever since their introduction in 2013, <span class="text-[#d4b038]"> CS2 skins
+                    have been a big part in the success of Counter-Strike 2.</span>
+                The basics are simple: Skins allow you to customize your weapons, your knife and your character models.
+                What makes them unique is the fact that they are virtual items that are not permanently bound to your
+                Steam account. You are free to trade with other players and you can buy or sell them. All the skins that
+                you own are kept in your Steam inventory to be used as you please.</p>
+            <p class="text-sm mt-[3%]">
+                There are multiple ways to obtain those skins. <span class="text-[#d4b038]">CS2 has a key system </span>
+                that allows you to open weapon
+                crates for a chance of receiving a random item from a certain collection, with those items ranging from
+                common drops to exceedingly rare knives or gloves.</p>
+            <div class="mt-[6%]">
+                <button type="button" class="rounded-md border-2 border-[gray] text-[gray] hover:bg-[#2e3034] p-[8px] ">
+                    READ TO KNOW MORE
+                </button>
+            </div>
+
+        </div>
+        <div class="md:w-[40%] w-[90%] relative md:mt-[10%] md:m-0 m-auto">
+            <div style="background-image: url(./image/group102.svg); background-repeat: no-repeat;"
+                class="bg-[70%] w-[77%] h-[63%] absolute right-[8%] top-[8%]"></div>
+            <div>
+                <div class="mt-[-15%]">
+                    <img class="" src="image/m9 bayonet lore 1.svg" width="60%" alt="">
+                    <p
+                        class="w-[34%] border-2 border-[#505259] rounded-md gap-x-1 text-white hover:bg-[grey] p-[6px] mt-[-13%]">
+                        M9 Bayonet | Lore</p>
+                    <div class="flex mt-[2%]">
+                        <p><i class="fa fa-info-circle" aria-hidden="true"></i> </p>
+                        <p class="ml-[4%] text-[gray]">Field-Tested </p>
+                    </div>
+                </div>
+                <p
+                    class="w-[38%] border-2 border-[#505259] rounded-md gap-x-1 text-white hover:bg-[grey] p-[6px] mt-[40%] ml-[66%]">
+                    M4A1-S | Golden Coil</p>
+                <div class="flex mt-[2%] ml-[66%]">
+                    <p><i class="fa fa-info-circle" aria-hidden="true"></i> </p>
+                    <p class="ml-[4%] text-[gray]">Field-Tested </p>
+                </div>
+                <div class="max-w-2xl mx-auto mt-[-35%]">
+                    <div id="default-carousel" class="relative md:mt-[18%] mt-[10%] ml-[4%]" data-carousel="static">
+
+                        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <span
+                                    class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl "></span>
+                                <img src="image/M4A1-S Golden Coil 1.svg" width="60%"
+                                    class="block absolute top-1/2 left-1/2 w-[70%] -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="image/m9 bayonet lore 1.svg"
+                                    class="block absolute top-1/2 left-1/2 w-[70%] -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="image/AK47(6).svg"
+                                    class="block absolute top-1/2 left-1/2 w-[70%] -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+                        </div>
+
+                        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                                data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                                data-carousel-slide-to="2"></button>
+                        </div>
+
+                        <button type="button"
+                            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                <span class="hidden">Anterior</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                                <!-- <span class="hidden">Siguiente</span> -->
+                            </span>
+                        </button>
+                    </div>
+
+                    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="w-[100%] color-[gray] ">
+
+    <!-- FAQ -->
+    <div class="w-[100%] md:pb-[4%] pb-[8%]">
+        <div class="mt-[7%] ml-[7%]">
+            <p class="text-[gray]">MOST POPULAR</p>
+            <h1 class="text-white font-bold text-4xl">Frequently Asked <span class="text-[#d4b038]">Questions</span>
+            </h1>
+        </div>
+        <div class="md:w-[80%] w-[90%] md:pb-[4%] pb-[8%] m-auto bg-[#2f3035] mt-[5%] rounded-md border-2 border-[gray]">
+
+            <p class="text-white mt-[5%] ml-[5%]">Check out answers to some common questions:</p>
+            <div class="flex justify-around mt-[4%]">
+                <div class="w-[35%] flex justify-around flex-col text-[#d4b038] text-xs space-y-6">
+                    <div class="space-y-2">
+                        <h1 class="text-[gray]">GENERAL</h1>
+                        <p>What does the remaining time and the "Tradable" label on items m</p>
+                        <p>How old do I have to be to use Skinport?</p>
+                        <p>Can I trade items?</p>
+                        <p>How do I change the currency on the website?</p>
+                    </div>
+                    <div class="mt-[5%] space-y-2">
+                        <h1 class="text-[gray]">BUYING</h1>
+                        <p>What should I do if my payment was declined?</p>
+                        <p>Where can I find my purchased items?</p>
+                        <p>I accidentally bought the wrong item</p>
+                        <p>I would like to use a payment method that is not shown in the che...</p>
+                        <p>Can I buy items and send them directly to a friend’s Steam accoun...</p>
+                    </div>
+                    <div class="mt-[5%] space-y-2">
+                        <h1 class="text-[gray]">SELLING</h1>
+                        <p>What is the sales fee?</p>
+                        <p>How can I cancel my sale?</p>
+                        <p>Can I change the price of items that I already listed for sale?</p>
+                        <p>Where can I find my active sales?</p>
+                        <p>Why are not all items from my Steam inventory displayed?</p>
+                        <p>Should I use the suggested price?</p>
+                        <p>I cannot find the "Instant sell" option</p>
+                        <p>I did not receive any credit to my balance</p>
+                    </div>
+                </div>
+
+                <div class="w-[35%] flex justify-around flex-col text-[#d4b038] text-xs">
+                    <div class="space-y-2">
+                        <p>Why do I have to verify myself?</p>
+                        <p>My country is not available for selling, what can I do?</p>
+                        <p>My item is showing up as “Being purchased”, what does this mean?</p>
+                    </div>
+                    <div class="mt-[5%] space-y-2">
+                        <h1 class="text-[gray]">PAYOUT</h1>
+                        <p>Are there any payout limits?</p>
+                        <p>Are there any payout fees involved?</p>
+                        <p>How long does a payout take?</p>
+                        <p>Can I withdraw my Skinport balance?</p>
+                        <p>Can I receive my balance via another payout method?</p>
+                    </div>
+                    <div class="mt-[5%] space-y-2">
+                        <h1 class="text-[gray]">ACCOUNT</h1>
+                        <p>I would like to use a different Steam account on Skinport, how can I</p>
+                        <p>Can I remove a linked Steam account?</p>
+                        <p>I need to add more than 2 Steam accounts to my Skinport account</p>
+                        <p>Why is my account restricted?</p>
+                        <p>Device confirmation troubleshooting</p>
+                    </div>
+                    <div class="mt-[5%] space-y-2">
+                        <h1 class="text-[gray]">Miscellaneous</h1>
+                        <p>Captcha: I'm not a robot</p>
+                        <p>I found a bug or a security vulnerability</p>
+                        <p>Ranking information</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-[2%]">
+            <button type="button" class="rounded-md border-2 border-[gray] text-[gray]  hover:bg-[#2e3034] p-[8px] ">
+                READ TO KNOW MORE
+            </button>
+        </div>
+    </div>
+
+    <!-- 6th Container -->
+    <div class="flex md:flex-row flex-col w-[100%] relative overflow-hidden">
+        <div style="background-image: url(./image/bg3.svg); background-size: cover;" class="w-[100%] h-[100%] absolute">
+        </div>
+        <div class="flex flex-col justify-center md:w-[50%] w-[100%] md:ml-[6%] ml-[10%] relative">
+            <h2 class="font-bold text-6xl text-white md:mt-0 mt-[5%]">Get<span class="text-[#d4b038]"> a fair price
+                </span>for your
+                skins now!</h2>
+            <div class="flex mt-[10%]">
+                <div class="flex">
+                    <button type="button"
+                        class="bg-[#d4b038] rounded-md gap-x-1 text-white text-sm hover:bg-[#2e3034] p-[8px] md:w-[100%] w-[80%]">
+                        <i class="fa-brands fa-steam-symbol" style="color: #ffffff;"></i> LOGIN WITH STEAM AND START NOW
+                    </button>
+                </div>
+                <div class="md:ml-[2%] ml-[1%] mt-[1%]">
+                    <p class="text-white"> Review us on <i class="fa-solid fa-star" style="color: #079f6d;"></i> Trust
+                        Pilot
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="md:w-[50%] w-[100%]">
+            <div class="mt-[12%] relative"><img src="image/Mask group.svg" alt=""></div>
+            <div class="absolute top-[40%] right-[0%]"><img src="image/Layer.svg" alt=""></div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-[5%]">
+        <div class="flex md:flex-row flex-col justify-around">
+            <div class="md:w-[10%] w-[30%] md:ml-[4%] ml-[4%]"><img src="image/Logo.svg" alt=""></div>
+            <div class="w-[100%] md:flex md:flex-row md:justify-start">
+                <div
+                    class="flex md:justify-evenly justify-between md:ml-[4%] ml-[4%] md:mt-0 mt-[4%] text-white md:w-[60%] w-[90%]">
+                    <p>Cashout</p>
+                    <p>FAQ</p>
+                    <p>About</p>
+                    <p>Support</p>
+                    <p>Privacy Policy</p>
+
+                </div>
+                <div class="flex md:justify-around justify-between  md:ml-[-2%] ml-[4%] mt-[2%] text-white md:w-[30%] w-[50%] ">
+                    <p class="md:mt-[-6%] mt-[3%]">Terms of Service</p>
+                    <button type="button"
+                        class="md:mt-[-7%] inline-flex w-full justify-center gap-x-1.5 rounded-md bg-[#2a2b2f] py-2 px-3 md:w-[20%] w-[30%] font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-[#2e3034] hover:bg-[#2e3034]"
+                        id="menu-button" aria-expanded="true" aria-haspopup="true">
+                        <img src="image/United Kingdom (GB).svg" alt="">
+                        <svg class="-mr-1 h-5 w-5 text-gray-400" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex md:flex-row flex-col justify-between m-auto w-[90%]">
+            <div class="flex flex-col text-[gray] mt-[5%] md:w-[40%] w-[90%]">
+                <p>FullBuy.gg @ All rights reserved</p>
+                <p>Powered by Steam. Not affiliated with Valve Corp.</p>
+            </div>
+            <div class="text-white flex justify-evenly mt-[5%] md:w-[30%] w-[80%]">
+                <p class="mt-[3%]">Follow us</p>
+                <img src="image/Frame 67.svg" alt="">
+                <img src="image/Frame 68.svg" alt="">
+                <img src="image/Frame 69.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+
+</body>
+
+</html>
